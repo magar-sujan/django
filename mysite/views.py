@@ -5,15 +5,6 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html') 
 
-def links(request):
-    return HttpResponse('''
-    <h2>Hello Mr.Mo2, This is your required link list</h2>
-    <a href="https://iothardware.atlassian.net/jira/software/projects/POD/boards/1?assignee=6319c1ca55b0a9e29f1c7d50"> zeera log</br>
-    <a href="https://pod-monitor.iot.bottle.com.np/devices">Thingsboard </br>
-    <a href="https://docs.google.com/spreadsheets/d/1UYeOH-xFouIQL1-N0zyD8YIPiWod7D0pdVDPmusGB5M/edit?pli=1#gid=0">Device List</br>
-    <a href="https://docs.google.com/spreadsheets/d/1l4IsvDlHAzDSaFuBosacMPuSF2cIHkXIs7WWx_89Vv0/edit#gid=1043436849">Test Environment Data
-    ''')
-
 def about(request):
     return HttpResponse("Mr.Mo2 about page")
 
